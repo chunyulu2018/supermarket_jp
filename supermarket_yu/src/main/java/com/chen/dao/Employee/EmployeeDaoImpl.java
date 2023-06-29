@@ -102,7 +102,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 	                //将此サプライヤ信息添加至 列表
 	            	employeeList.add(employee);
 	            }
-	            System.out.print("資源解放");
+	            System.out.print("データベースの接続を切断");
 	            //释放资源
 	            BaseDao.closeResource(null,pstm,rs);
 	        }
