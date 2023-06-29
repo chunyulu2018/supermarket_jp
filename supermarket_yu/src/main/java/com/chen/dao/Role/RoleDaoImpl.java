@@ -13,6 +13,7 @@ import java.util.List;
 
 public class RoleDaoImpl implements RoleDao {
     //ロールリストを取得
+//Test
     @Override
     public List<Role> getRoleList(Connection conn) throws SQLException {
         PreparedStatement pstm = null;
