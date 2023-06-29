@@ -80,7 +80,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 	            list.add(pageSize);
 
 	            Object[] params = list.toArray();
-	        System.out.println("getEmployeeList的语句"+sql.toString());
+	            System.out.println("getEmployeeList的语句"+sql.toString());
 	            //执行sql
 	            rs = BaseDao.executeQuery(conn, sql.toString(), pstm, params,rs);
 	            //遍历结果集 封装到一个サプライヤ中
@@ -102,6 +102,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 	                //将此サプライヤ信息添加至 列表
 	            	employeeList.add(employee);
 	            }
+	            System.out.print("資源解放");
 	            //释放资源
 	            BaseDao.closeResource(null,pstm,rs);
 	        }
