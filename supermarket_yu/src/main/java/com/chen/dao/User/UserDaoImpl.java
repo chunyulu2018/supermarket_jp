@@ -20,7 +20,7 @@ public class UserDaoImpl implements UserDao {
         PreparedStatement preparedStatement = null;
         ResultSet rs = null;
         User user = null;
-
+        //test
         //如果连数据库都没连接就无需判断了
         if(conn!=null){
             //编写sql语句预编译sql
