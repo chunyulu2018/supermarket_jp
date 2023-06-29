@@ -171,6 +171,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 	            
 	        }
 	        //释放资源
+	        System.out.print("test");
 	        BaseDao.closeResource(null,pstm,rs);
 	    }
 	        return employee;
