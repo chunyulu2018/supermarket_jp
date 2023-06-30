@@ -92,7 +92,7 @@ public class EmployeeServlet extends HttpServlet {
             String pageIndex = req.getParameter("pageIndex");
             int queryRank = 0;
 
-            //获取社員列表
+            //获取员工列表
             EmployeeServiceImpl employeeService = new EmployeeServiceImpl();
             //第一次走这个请求，一定是第一页，页面大小固定的
 
