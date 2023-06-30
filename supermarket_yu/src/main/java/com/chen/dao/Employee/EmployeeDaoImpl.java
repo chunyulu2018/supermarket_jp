@@ -16,7 +16,8 @@ public class EmployeeDaoImpl implements EmployeeDao {
 	 //根据用户名 或 角色 查询用户总数
     @Override
     public int getEmployeeCounts(Connection conn, String userName, int rank) throws SQLException {
-        PreparedStatement pstm = null;
+        System.out.print("処理開始");
+    	PreparedStatement pstm = null;
         ResultSet rs = null;
         int count = 0;
         if(conn!=null){
