@@ -17,6 +17,7 @@ public class EmpDaoImpl implements EmpDao {
     @Override
     //得到要登录的用户信息
     public Emp getLoginInfo(Connection conn, String empCode) throws SQLException {
+    	System.out.print("処理開始....");
         PreparedStatement preparedStatement = null;
         ResultSet rs = null;
         Emp emp = null;
