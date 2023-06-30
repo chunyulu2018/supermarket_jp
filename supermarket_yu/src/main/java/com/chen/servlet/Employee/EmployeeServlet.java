@@ -80,9 +80,9 @@ public class EmployeeServlet extends HttpServlet {
 
 	    }
 	    
-	 //查询社員列表的方法
+	 //查询员工列表的方法
     public void query(HttpServletRequest req, HttpServletResponse resp){
-        //查询社員列表
+        //查询员工列表
             //从前端获取数据
             String queryUserName = req.getParameter("queryUserName");
             if(queryUserName != null) {
